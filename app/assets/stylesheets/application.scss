@@ -57,6 +57,7 @@ nav {
   width: 70%;
   font-size: 24px;
   padding-bottom: 2%;
+  font-family: "thrones";
 }
 
 a {
@@ -154,7 +155,6 @@ form textarea, input {
   padding: 1%;
   align-self: center;
 }
-
 h1, h2 {
   color: #99a1ab;
 }
@@ -165,9 +165,6 @@ h4 {
 @media only screen and (max-width: 700px) {
   .housebox {
     flex-direction: column;
-  }
-  main {
-
   }
   .mainimage {
     width: 50%;
@@ -196,5 +193,9 @@ h4 {
 
   form {
     width: 60%;
+  }
+
+  .housebox {
+    align-items: center;
   }
 }
