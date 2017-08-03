@@ -1,0 +1,19 @@
+<div class="housebox">
+  <div class="housebanner">
+    <h1><%= @house.name %></h1>
+    <%= image_tag(@house.img_url, class: "banimage")%>
+  </div>
+  <div class="housecontent">
+    <h2>Region:</h2> <%= @house.region %>
+    <h2>Seat:</h2> <%= @house.location %>
+  </div>
+
+  <div class="housecontent">
+  <h2>Characters:</h2>
+  <% @house.characters.each do |c| %>
+    <%= link_to c.name, house_character_path(@house, c) %>
+  <% end %><br>
+  <%= link_to " Expand the Family ", new_house_character_path(@house, @character) %>
+  </div>
+
+</div>

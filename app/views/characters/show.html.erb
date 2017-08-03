@@ -1,0 +1,9 @@
+<h2><%= @character.name %> <%= @character.house.name %></h2>
+<% if @character.is_alive == true %>
+  <%= image_tag(@character.img_url, class: "char")%>
+<% else %>
+  <h4>DECEASED</h4>
+  <%= image_tag(@character.img_url, class: "deadchar")%>
+<% end %>
+<br>
+<%= link_to "(edit)", edit_house_character_path(@character.house, @character) %>

@@ -1,0 +1,12 @@
+<h2>Add a New Character</h2>
+
+<%= form_for [@house, @character], url: {action: "create"} do |f| %>
+  <%= f.label :First_name %>
+  <%= f.text_field :name %>
+  <%= f.label :Img_URL %>
+  <%= f.text_field :img_url %>
+  <%= f.label :"Alive? (true or false)" %>
+  <%= f.text_field :is_alive %>
+  <br>
+  <%= f.submit class: 'submit' %>
+<% end %>

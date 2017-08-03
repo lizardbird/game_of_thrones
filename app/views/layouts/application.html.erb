@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GameOfThrones</title>
+    <title>Game Of Thrones</title>
     <%= csrf_meta_tags %>
-
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+  <div class="main">
+  <div class="logobox">
+    <div class="logo">
+      GOT.io
+    </div>
+    <div class="tagline">
+      Game of Thrones On-the-go
+    </div>
+  <nav>
+    <%= link_to "Home", root_path %>
+    <%= link_to "Houses", houses_path %>
+    <%= link_to "Characters", characters_path %>
+  </nav>
+</div>
+  <div class="content">
     <%= yield %>
+  </div>
+  </div>
+  <div class="animals">
+
+  </div>
   </body>
 </html>

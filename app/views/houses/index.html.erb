@@ -1,0 +1,12 @@
+<h1>All Houses</h1>
+
+<div class="houselist">
+  <% @houses.each do |h| %>
+  <%= link_to h.name, house_path(h) %>
+  <% end %>
+</div>
+
+<br>
+<div class="create">
+  <%= link_to "Join the Realm", new_house_path %>
+</div>

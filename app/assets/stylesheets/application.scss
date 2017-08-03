@@ -1,0 +1,200 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ /* assets/stylesheets */
+
+@font-face {
+   font-family: "thrones";
+   src: url('game_of_thrones.ttf') format("truetype");
+}
+.logobox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin-left: 10%;
+  padding-top: 2%;
+  padding-left: 5%;
+}
+.logo {
+  font-family: "thrones";
+  font-size: 50px;
+}
+.tagline {
+  margin-bottom: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+body {
+  background-color: #000e2b;
+  display: flex;
+  justify-content: flex-start;
+  align-items:flex-start;
+  color: #fec86a;
+  height: 100vh;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  font-size: 24px;
+  padding-bottom: 2%;
+}
+
+a {
+  text-decoration: none;
+  color: #f06938;
+}
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+}
+p {
+  width: 90%;
+}
+
+.animals {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.mainimage {
+  width: 25%;
+  align-self: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.houselist, .characterlist {
+  display: flex;
+  flex-direction: column;
+}
+.housebox {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+  // align-items: center;
+  // background-color: green;
+  padding-top: 4%;
+}
+.housebanner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // background-color: red;
+  width: 25%;
+}
+
+.housecontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // background-color: blue;
+  padding: 5%;
+  width:25%;
+}
+.banimage {
+  width: 80%;
+}
+.char {
+  width: 20%;
+  border: 1px solid white;
+}
+.deadchar {
+  width: 20%;
+  border: 1px solid red;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 40%;
+}
+form label {
+  font-weight: bold;
+}
+
+.submit, .delete {
+  width: 50%;
+  margin: 2%;
+  font-size: 18px;
+}
+
+form textarea, input {
+  width: 100%;
+  margin: 1%;
+  padding: 1%;
+  align-self: center;
+}
+
+h1, h2 {
+  color: #99a1ab;
+}
+
+h4 {
+  color:red;
+}
+@media only screen and (max-width: 700px) {
+  .housebox {
+    flex-direction: column;
+  }
+  main {
+
+  }
+  .mainimage {
+    width: 50%;
+  }
+  body {
+    font-size: 16px;
+  }
+
+  nav {
+    font-size: 18px;
+  }
+  .logo {
+    font-size: 40px;
+  }
+  .banimage {
+    width: 140%;
+  }
+  .charimage {
+    width: 90%;
+  }
+
+  .submit, .delete {
+    width: 90%;
+    font-size: 18px;
+  }
+
+  form {
+    width: 60%;
+  }
+}
